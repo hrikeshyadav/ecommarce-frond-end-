@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="STATIC/CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container col-md-12 mx-auto">
+        <div class="row mt-3"><!--row 1 start or header section start-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light col-md-11 mx-auto">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">Ps401</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Logout</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                      </li>
+                      <!--<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                      </li>-->
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div><!--row 1 end header section end-->
+
+
+        <div class="row col-md-11 mx-auto  mt-3 bg-light ">   <!-- 2nd row start or main section start-->
+          <div class="col-md-3">
+            <h5> Filter By Catogary</h5>
+            <a href="#">All</a> <br>
+            <a href="#">Mobile</a> <br>
+            <a href="#">shooes</a> <br>
+            <a href="#">Cloths</a> <br>
+
+            <h5> Sort By Price</h5>
+            <a href="#">High to low</a> <br>
+            <a href="#">low to High</a> <br>
+
+            <h5>Filter by Price</h5>
+            <form action="#">
+              <div class="form-group">
+                <label for="Input1" class="from-label">min</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" >
+              </div>
+
+              <div class="form-group">
+                <label for="Input2" class="from-label">max</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" >
+              </div>
+            </form>
+
+            <div class="mb-3">
+              <input type="submit" value="find" class="btn btn-success">
+            </div>
+            
+
+          </div>  <!-- sidebar end-->
+          <div class="col-md-9"><!-- product list section start-->
+
+            <div class="row">
+              <div class="card m-2" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card m-2" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card m-2" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card m-2" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              
+
+                
+
+
+                
+
+              
+            </div>
+
+
+
+          </div>
+
+
+        </div>          <!-- 2nd row end or main section end-->
+
+        <div class="row col-md-11 mx-auto bg-light p-3 mt-3">  <!-- 3nd row start or main section start-->
+          <div class="col-md-4">
+            <h5>Adress</h5> <hr>
+            22-B,1<sup>st</sup> flooe,Rainbow plaza, <br>
+            Shivar garden chauk,Pimple saudagar,<br>
+            Pune 411 027, <br>
+            Maharastra <br>
+
+          </div>
+
+
+          <div class="col-md-4">
+            <h5>Quick Links</h5><hr>
+            <h4> <a href="index1010.html"> home</a>  </h4>
+            <h4> <a href="#"> About</a>   </h4>
+            <h4> <a href="#"> Contact</a>  </h4>
+            
+          </div>
+          <div class="col-md-4">
+            <h5>Social media</h5><hr>
+            
+            <span><h5><a href=""><i class="bi bi-linkedin"></i></a></h5></i></span>
+            <span><h5><a href=""><i class="bi bi-twitter"></i></a></h5></span>
+            <span><h5><a href=""><i class="bi bi-instagram"></i></a></h5></span>
+            <span><h5><a href=""><i class="bi bi-facebook"></i></a></h5></span>
+            
+            
+          </div>
+          
+        </div> <!-- 3nd row end or main section end-->
+        
+
+
+
+
+    </div>
+    <script src="STATIC/JS/bootstrap.min.js"></script>
+    <script src="STATIC/JS/popper.js"></script> 
+</body>
+</html>
