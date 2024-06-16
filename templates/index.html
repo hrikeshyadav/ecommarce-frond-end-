@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'main'  %}
+
+<div class="row col-md-11 mx-auto  mt-3 bg-light ">   <!-- 2nd row start or main section start-->
+    <div class="col-md-3">
+      <h5> Filter By Catogary</h5>
+      <a href="/product">All</a> <br>
+      <a href="/catfilter/0">stationary</a> <br>
+      <a href="/catfilter/1">mobile</a> <br>
+      <a href="/catfilter/2">electronic</a> <br>
+      <a href="/catfilter/3">random</a> <br>
+
+      <h5> Sort By Price</h5>
+      <a href="/sortfilter/1">High to low</a> <br>
+      <a href="/sortfilter/2">low to High</a> <br>
+
+      <h5>Filter by Price</h5>
+      <form action="/pricefilter" method="GET">
+        <div class="form-group">
+          <label for="Input1" class="from-label">min</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="min" >
+        </div>
+
+        <div class="form-group">
+          <label for="Input2" class="from-label">max</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="max" >
+        </div>
+        <br>
+        <div class="mb-3">
+          <input type="submit" value="find" class="btn btn-success">
+        </div> 
+      </form>
+      <br>
+
+      
+
+    </div>  <!-- sidebar end-->
+    <div class="col-md-9"><!-- product list section start-->
+
+      <!-- <div class="row">
+        {% for i in data %}
+        <div class="card m-2" style="width: 18rem;">
+          <img src="{{i.pimage.url}}" class="card-img-top pt-2" style="height: 17rem; width: 16.5rem;" alt="Card image cap" style="height: 325px; ">
+          <div class="card-body">
+            <h5 class="card-title">{{i.name}}</h5>
+            <p class="card-text">{{i.pdetail}}</p>
+            <p class="card-text">{{i.price}}</p>
+            <a href="/product_detail/{{i.id}}" class="btn btn-primary">See details</a>
+          </div>
+        </div>
+
+        {% endfor %} -->
+
+        <div class="row">
+          {% for i in data %}
+          <div class="card m-2" style="width: 15rem;">
+            <img class="card-img-top m-1" src="{{i.pimage.url}}" alt="Card image cap" style="height: 10rem; width: 13rem;" >
+            <div class="card-body">
+              <h5 class="card-title">{{i.name}}</h5>
+              <p><strong>Price: </strong>{{i.price}}</p>
+              <a href="/product_detail/{{i.id}}" class="btn btn-success">See details</a>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+
+        <!-- <div class="card m-2" style="width: 18rem;">
+          <img class="card-img-top pt-2" style="height: 17rem; width: 16.5rem;"  src="https://plus.unsplash.com/premium_photo-1703631159456-cd2437a37fbe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVkJTIwc2hpcnR8ZW58MHx8MHx8fDA%3D" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Red shirt</h5>
+            <p class="card-text">Pure cotton</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>          <!-- 2nd row end or main section end-->
+
+  {% endblock 'main'  %}
